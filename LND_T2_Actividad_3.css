@@ -1,0 +1,93 @@
+:root {
+    --white: #f4f4f4;
+    --black: #000000;
+    --pink: #ec83c9;
+    --gray: #b1b3b4;
+    --yellow: #e2d963;
+}
+
+* {
+    font-family: "Open Sans Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    background-image: url("./img/portfolio_cover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.name {
+    font-size:7em;
+    font-weight: lighter;
+    top: 13rem;
+    position: absolute;
+}
+
+.subtitle {
+    font-size: 4em;
+    font-weight: lighter;
+    top: 22rem;
+    position: absolute;
+}
+
+.more_button {
+    color: var(--white);
+    font-size: 1.8em;
+    width: 14rem;
+    height: 4rem;
+    border-radius: 2em;
+    text-align: center;
+    line-height: 2.1em;
+    padding: .1em .5em .1em .5em;
+    bottom: 6rem;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    background: var(--black);
+    transition: .3s ease;
+    outline: .1em solid var(--black);
+}
+
+.more_button:hover {
+    animation: changeColor .3s forwards
+}
+
+@keyframes changeColor {
+    0% {
+        background: linear-gradient(45deg, var(--black), var(--pink));
+    }
+    25% {
+        background: linear-gradient(45deg, var(--pink), var(--yellow));
+        color: var(--black);
+        font-weight: bold;
+    }
+    50% {
+        background: linear-gradient(45deg, var(--yellow), var(--pink));
+        color: var(--black);
+        font-weight: bold;
+    }
+    75% {
+        background: linear-gradient(45deg, var(--yellow), var(--black));
+        color: var(--white);
+    }
+    100% {
+        background: var(--black);
+        color: var(--white);
+    }
+}
+
+/* Main */
+
+/* Footer */
