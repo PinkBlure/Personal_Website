@@ -131,6 +131,40 @@
 
 .about_me_title {
     font-size: 2.5em;
-}   
+}
+
+/* Education */
+
+.education {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    padding: 2em 2em 2em 2em;
+}
+
+.border {
+    margin: 0 .5em 2em 5em;
+    padding: 2em 3em 2em 3em;
+    border: 2px solid var(--black);
+    font-size: .5em;
+    width: 100rem;
+}
+
+.estudio {
+    margin: 2em 0 2em 0;
+}
+
+.subrayado {
+    background-color: rgba(236, 131, 201, .5);
+    padding: 0 .5em 0 .5em;
+}
+
+.amarillo {
+    background-color: rgba(226, 217, 99, .5);
+}
+
+.texto {
+    padding: .5em 1em 0 1em;
+}
 
 /* Footer */
