@@ -171,6 +171,7 @@
 
 .proyecto {
     font-size: 3em;
+    margin: 0 0 1em 3em;
 }
 
 .proyectos_container {
@@ -178,10 +179,39 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.articulo {
+    position: relative;
+    margin: 0 7em 4em 0;
 }
 
 .img_portatil {
-    height: 10rem;
+    width: 22rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cover {
+    width: 19rem;
+    height: 11rem;
+    margin-top: 0.1em;
+    border-radius: 1em;
+}
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.project_title {
+    margin: 0 0 .6em 0;
+    background-color: rgba(236, 131, 201, .5);
 }
 
 /* Footer */
