@@ -11,6 +11,13 @@
     font-family: "Open Sans Regular", sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -72,15 +79,14 @@
     25% {
         background: linear-gradient(45deg, var(--pink), var(--yellow));
         color: var(--black);
-        font-weight: bold;
+
     }
     50% {
         background: linear-gradient(45deg, var(--yellow), var(--pink));
         color: var(--black);
-        font-weight: bold;
     }
     75% {
-        background: linear-gradient(45deg, var(--yellow), var(--black));
+        background: linear-gradient(45deg, var(--pink), var(--black));
         color: var(--white);
     }
     100% {
@@ -220,12 +226,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 8em;
+    padding: 0 8em 2em 0;
 }
 
 .contacto {
     font-size: 3em;
-    margin: 0 0 1em 3em;
+    margin: 1em 0 1em 3em;
+}
+
+.orgatization {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .coffee_img {
@@ -237,11 +249,20 @@
 .texto_contacto {
     display: flex;
     flex-direction: row;
+    margin-left: 8em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 .social {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding-left: 4em;
+}
+
+.social_icon {
+    height: 2.5rem;
 }
 
 /* Footer */
